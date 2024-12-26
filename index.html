@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankith V Gopal - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(to bottom, #e0f7fa, #b3e5fc);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.5rem;
+            color: white;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 0.5rem 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            color: #90caf9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem 0;
+        }
+
+        h2 {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        footer {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ankith V Gopal</h1>
+        <p>Product Owner | Developer | UI5 Specialist</p>
+        <a href="#about" class="btn">Learn More</a>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L30,181.3C60,171,120,149,180,154.7C240,160,300,192,360,213.3C420,235,480,245,540,245.3C600,245,660,235,720,224C780,213,840,203,900,186.7C960,171,1020,149,1080,144C1140,139,1200,149,1260,160C1320,171,1380,181,1410,186.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>
+                I am a versatile Product Owner and Developer with expertise in SAP technologies,
+                including UI5, Fiori, and CDS. I currently lead a team of 15 members to deliver robust PLM solutions for the Intelligent Enterprise program, ensuring Agile excellence and cross-functional collaboration.
+            </p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>SAP Labs:</strong> Product Owner, Scrum Master, and UI Developer, leading the PLM Change Record team to deliver robust solutions.</li>
+                <li><strong>Digital Thread Initiative:</strong> Developed SAP Intelligent Enterprise components for connectivity and traceability.</li>
+                <li><strong>SAP Cloud ALM:</strong> Designed and built microservices for service delivery issues, integrated with Kafka and tested for resilience.</li>
+                <li><strong>SAP Ariba:</strong> Developed UI features and contributed to data injection and ETL processes for Spend Visibility.</li>
+                <li><strong>ISTRAC – ISRO:</strong> Collaborated with Chandrayaan and Mangalyaan teams for critical system analysis and satellite data processing.</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Virtual Assistant for Blind:</strong> Real-time object detection application using R-CNN and pre-trained datasets.</li>
+                <li><strong>Online Voting Portal:</strong> Secure, internet-based voting platform integrated with Docker, Kubernetes, and Jenkins.</li>
+                <li><strong>Smart Contract for Trek Lending Service:</strong> Blockchain-based application to track lending items using MetaMask and Hardhat.js.</li>
+            </ul>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <p><strong>Languages:</strong> Java, JavaScript, Python</p>
+            <p><strong>Technologies:</strong> SAP UI5, Fiori, ABAP, CDS, RAP, ODATA</p>
+            <p><strong>DevOps:</strong> Docker, Kubernetes, Jenkins</p>
+            <p><strong>Cloud:</strong> Amazon Web Services (AWS)</p>
+            <p><strong>Testing:</strong> Mocha, JUnit, Webdriver.io</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:ankith1ga17cs015@gmail.com">ankith1ga17cs015@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.tools.sap/I552561" target="_blank">View my GitHub</a></p>
+            <p>Address: Bengaluru, KA, India - 560040</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ankith V Gopal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
